@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AL-GHIZA – Premium Natural Nutrition</title>
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="cart.css">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav-wrapper">
+
+
+            <div class="logo">
+                <img src="./assets/logo.png" alt="">
+            </div>
+
+            <nav class="nav-left">
+                <a href="/index.html">Home</a>
+                <a href="/product/product.html">Products</a>
+                <a href="/deals/deal.html">Combo Deals</a>
+                <a href="/contact/contact.html">Contact</a>
+            </nav>
+
+            <nav class="nav-right">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- cart section -->
+
+    <section>
+        <div class="cart">
+            <div class="img">
+                <img src="./assets/product1.png" alt="">
+            </div>
+            <div class="cart-content">
+                <h1>AJWA Talbeena</h1>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>6 Reviwes
+                <h5>Rs.1560</h5>
+
+                <div class="deliver">
+                    <div class="deliverfont">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                    <div class="deliver-content">
+                        <h4>We Deliver <span style="color: rgb(104, 57, 29);">100% Natural & Pure</span></h4>
+                        <p>Experience the perfect blend of authenticity
+                            and quality in everything we create.</p>
+                    </div>
+                </div>
+
+                <h4>Sellect Weight</h4>
+                <div class="weight">
+                    <h3 class="box" onclick="">300gm</h3>
+                    <h3 class="box" onclick="">1kg</h3>
+                </div>
+
+                <div class="counter">
+                    <div class="main-counter">
+                        <button id="down">−</button>
+                        <span id="number">0</span>
+                        <button id="up">+</button>
+                    </div>
+                    <div class="cart-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h4>ADD TO CART</h4>
+                    </div>
+                </div>
+                <div class="buy-button">
+                    <h6>BUY IT NOW</h6>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script>
+
+        const boxes = document.querySelectorAll(".box");
+
+        boxes.forEach(box => {
+            box.addEventListener("click", function () {
+
+                // pehle sab se active hatao
+                boxes.forEach(b => b.classList.remove("active"));
+
+                // phir jis par click hua usay active karo
+                this.classList.add("active");
+            });
+        });
+    </script>
+
+    <script>
+
+        let count = 0;
+
+        const number = document.getElementById("number");
+        const upBtn = document.getElementById("up");
+        const downBtn = document.getElementById("down");
+
+        upBtn.addEventListener("click", function () {
+            count++;
+            number.innerText = count;
+        });
+
+        downBtn.addEventListener("click", function () {
+            if (count > 0) {
+                count--;
+                number.innerText = count;
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2b2b2b;
+    background: #fff;
+}
+
+.container {
+    width: 1260px;
+    margin: auto;
+}
+
+/* HEADER – IslamicFoods Inspired */
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-wrapper {
+    width: 1260px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 56px;
+}
+
+.nav-left {
+    justify-content: center;
+}
+
+.nav-right {
+    justify-content: center;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #b89045;
+    position: relative;
+}
+
+.nav-right a i {
+    font-size: 20px;
+}
+
+.nav-left a::after,
+.nav-right a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #b89045;
+    transition: width 0.3s ease;
+}
+
+.nav-left a:hover::after,
+.nav-right a:hover::after {
+    width: 100%;
+}
+
+/* form */
+
+/*  */
+.contact-heading {
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-wrapper {
+    max-width: 800px;
+    margin-left: 4vw;
+    margin-top: 4vh;
+}
+
+.label {
+    display: block;
+    font-weight: 700;
+    margin: 20px 0 8px;
+    font-family: poppins;
+
+}
+
+.label span {
+    color: #000;
+}
+
+.name-group {
+    display: flex;
+    gap: 20px;
+}
+
+.input-box {
+    width: 268.7px;
+    height: 41.6px;
+}
+
+input,
+textarea {
+    width: 554.1px;
+    padding: 12px;
+    border: 1px solid #8a94a6;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+
+small {
+    display: block;
+    margin-top: 6px;
+    color: #000;
+    font-size: 13px;
+    font-family: poppins;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background: rgb(104, 57, 29);
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 4vh;
+}
+
+.contact-pic {
+    width: 591px;
+    height: 593.75px;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+/* FOOTER */
+.premium-footer {
+    background: #0f0f0f;
+    color: #dcdcdc;
+    margin-top: 65px;
+    padding: 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+    gap: 60px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* BRAND */
+
+.footer-logo img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #bdbdbd;
+}
+
+/* LINKS */
+.footer-links h4,
+.footer-contact h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: #bdbdbd;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: color .3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+/* CONTACT */
+.footer-contact p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #bdbdbd;
+}
+
+/* SOCIALS */
+.footer-socials {
+    display: flex;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all .3s ease;
+}
+
+.footer-socials a:hover {
+    background: #ffffff;
+    color: #0f0f0f;
+    transform: translateY(-3px);
+}
+
+/* BOTTOM */
+.footer-bottom {
+    text-align: center;
+    padding: 28px 0;
+    font-size: 13px;
+    color: #8c8c8c;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+}
