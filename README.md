@@ -61,3 +61,12 @@ helplytics-ai/
 │   └── auth.html       # Onboarding
 ├── css/                # Stylesheets
 └── assets/             # Media & Icons
+
+# Clone the repository
+git clone [https://github.com/talhawebdev725/HACKATON.git](https://github.com/hamzanexadev/HACKATON.git)
+
+# Navigate to folder
+cd HACKATON
+
+# Open in browser
+# Use 'Live Server' for the best experience
