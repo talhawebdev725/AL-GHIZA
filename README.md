@@ -1,68 +1,63 @@
-🛡️ Helplytics AI
-Find help faster. Become help that matters.
+# <p align="center">🛡️ Helplytics AI</p>
+<p align="center"><b>Find help faster. Become help that matters.</b></p>
 
-A premium, community-powered support network for students, mentors, creators, and builders — crafted entirely with vanilla HTML, CSS, and JavaScript.
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Live-brightgreen" alt="Status">
+  <img src="https://img.shields.io/badge/Tech-Vanilla_JS-yellow" alt="Tech">
+  <img src="https://img.shields.io/badge/Design-Glassmorphism-blue" alt="Design">
+</p>
 
-🌐 View Live Demo
+---
 
-💡 The Idea
-Most students struggle alone. They hit a wall, lose momentum, and never ask for help. Helplytics AI flips that — it's a structured platform where asking for help is easy, finding the right person is fast, and contributing earns you real recognition.
+### 🌐 [View Live Demo](https://github.com/hamzanexadev/HACKATON)
 
-Built as a simulated product ecosystem, not a school project. Every page, flow, and interaction is designed to feel like something you'd actually ship.
+## 💡 The Idea
+Most students struggle alone. They hit a wall, lose momentum, and never ask for help. **Helplytics AI** flips that — it's a structured platform where asking for help is easy, finding the right person is fast, and contributing earns you real recognition.
 
-🤖 What's Inside
-AI Center
-The brain of the platform. It reads community activity and surfaces what matters — urgency spikes, rising skill gaps, requests that need attention now, and rewrite suggestions to help students frame their problems better.
+> **Note:** Built as a simulated product ecosystem. Every page, flow, and interaction is designed to feel like something you'd actually ship.
 
-📊 Trust Graph
-Every interaction on the platform builds (or burns) reputation. Solved requests, fast responses, and quality help translate into trust scores, badges like "Fast Responder" and "Top Mentor", and a live leaderboard that makes contribution visible.
+---
 
-📡 Community Pulse
-A real-time-feel explore feed showing problems currently in motion. Filter by category, urgency, or skill. Notification signals fire when there's a match, a reputation boost, or something worth acting on.
+## 🤖 What's Inside
 
-🛠️ Admin Panel
-Full platform oversight — moderation table, request status tracking, and high-level analytics on user growth, request volume, and solution rates.
+<table>
+  <tr>
+    <td><b>🤖 AI Center</b></td>
+    <td>The brain of the platform. It surfaces urgency spikes, rising skill gaps, and helps students frame problems better.</td>
+  </tr>
+  <tr>
+    <td><b>📊 Trust Graph</b></td>
+    <td>Every interaction builds reputation. Earn badges like "Fast Responder" and "Top Mentor" based on quality help.</td>
+  </tr>
+  <tr>
+    <td><b>📡 Community Pulse</b></td>
+    <td>A real-time explore feed showing problems in motion. Filter by category, urgency, or skill.</td>
+  </tr>
+  <tr>
+    <td><b>🛠️ Admin Panel</b></td>
+    <td>Full platform oversight — moderation table, request status tracking, and high-level analytics.</td>
+  </tr>
+</table>
 
-💻 Tech Stack
-No React. No libraries. No shortcuts.
+---
 
-HTML5 → Structure & semantic markup
+## 💻 Tech Stack
+**Pure performance. No shortcuts.**
 
-CSS3 → Custom design system, glassmorphism, animations
+- **Structure:** HTML5 (Semantic Markup)
+- **Styling:** CSS3 (Custom Design System, Glassmorphism, Animations)
+- **Logic:** JavaScript (ES6+, DOM Manipulation)
+- **Storage:** LocalStorage (Session Persistence)
 
-JavaScript → ES6+, DOM logic, dynamic interactions
+---
 
-LocalStorage → Session simulation & persistent state
-
-Netlify → Deployment
-
-📂 Project Structure
-Plaintext
+## 📂 Project Structure
+```text
 helplytics-ai/
-│
 ├── index.html          # Landing page
 ├── pages/
 │   ├── dashboard.html  # User command center
-│   ├── explore.html    # Request discovery feed
 │   ├── ai-center.html  # AI insights hub
-│   ├── admin.html      # Platform moderation
-│   └── auth.html       # Login / Signup / Onboarding
-├── css/                # Global & page-level stylesheets
-├── assets/             # Images, icons, fonts
-└── references/         # Official brief & design documentation
-🛠️ Getting Started
-Clone the repo
-
-Bash
-git clone https://github.com/hamzanexadev/HACKATON.git
-Navigate into it
-
-Bash
-cd HACKATON
-Open index.html in your browser
-— or use Live Server in VS Code for full multi-page support.
-
-📜 Acknowledgements
-Built at the SMIT Grand Coding Night, April 2026 — organized by Saylani Mass IT Training for Batch 18. Respect to every student who shipped something that night. 🫡
-
-Made by @hamzanexadev · Saylani Batch 18 · SMIT Grand Coding Night 2026
+│   └── auth.html       # Onboarding
+├── css/                # Stylesheets
+└── assets/             # Media & Icons
